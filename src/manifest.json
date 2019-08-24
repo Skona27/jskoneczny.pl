@@ -1,0 +1,33 @@
+{
+  "name": "Jakub Skoneczny Portfolio",
+  "short_name": "Portfolio JS",
+  "theme_color": "#575fcf",
+  "background_color": "#eeffee",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "img/favicon.ico",
+      "sizes": "72x72",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/favicon.ico",
+      "sizes": "96x96",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/favicon.ico",
+      "sizes": "128x128",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/favicon.ico",
+      "sizes": "144x144",
+      "type": "image/x-icon"
+    }
+  ]
+}
