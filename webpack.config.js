@@ -76,6 +76,7 @@ module.exports = {
       filename: "./assets/style.css"
     }),
     new CopyWebpackPlugin([
+      { from: "src/service-worker.js", to: "./assets/service-worker.js" },
       { from: "src/manifest.json", to: "./assets/manifest.json" },
       { from: "src/img", to: "./assets/img" }
     ]),

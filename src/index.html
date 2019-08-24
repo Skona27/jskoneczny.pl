@@ -486,6 +486,19 @@
 
   </footer>
 
+  <script defer>
+    const PATH = 'assets/service-worker.js';
+    
+    let isServiceWorkersSupport = ('serviceWorker' in navigator);
+    
+    if (isServiceWorkersSupport) {
+        navigator.serviceWorker.register(PATH).then(function () {
+        }).catch(function (err) {
+            console.warn("Service worker error: ", err)
+        });
+    }
+    
+    </script>
 </body>
 
 </html>
