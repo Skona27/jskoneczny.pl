@@ -1,0 +1,157 @@
+.header {
+    position: relative;
+    height: calc(100vh);
+    background: linear-gradient(to right bottom, rgba($color-tertiary-light, .8), rgba($color-tertiary-dark, .8)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 83vh, 0 93vh);
+    padding: 0 6vw;
+    backface-visibility: hidden;
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        padding: 5rem 6vw;
+        z-index: 9999 !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: none;
+        transition: .3s all ease-in !important;
+
+        animation: 1s fadeIn .5s;
+        animation-fill-mode: backwards;
+
+        @include respond(phone) {
+            flex-direction: column;
+            padding: 2.5rem 6vw;
+        }
+
+        @include respond(phone-sm) {
+            padding: 2rem 6vw;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        margin-left: auto;
+
+        @include respond(tab-port) {
+            margin: 0 auto;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        padding: 0 2rem;
+        &:last-child {
+            padding-right: 0;
+        }
+
+        @include respond(tab-port) {
+            padding: 0 1rem;
+        }
+        @include respond(phone) {
+            padding: .4rem .8rem;
+        }
+    }
+    &__link {
+        font-size: 2rem;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .4rem .1rem;
+        color: $color-text-white-2;
+        text-shadow: 0 1px 5px rgba(0,0,0, .1);
+
+        @include respond(big-desktop) {
+            padding: .5rem.2rem;
+            font-size: 2rem;
+        }  
+        
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }  
+
+        &:hover {
+            border-bottom: 2px solid $color-text-white-2;
+        }
+    }
+    &__brand {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 1px 8px rgba(0,0,0, .1);
+
+        @include respond(big-desktop) {
+            font-size: 2.2rem;
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+
+        &:hover {
+            border: 0 !important;
+        }
+    }
+    &__promo-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        animation: 1s slideBottom 1s;
+        animation-fill-mode: backwards; 
+
+        @include respond(phone) {
+            top: 50%;
+        }
+
+        @include respond(phone-sm) {
+            top: 53%;
+        }
+    }
+
+    &__btn {
+        margin: .2rem 1rem;
+        @include respond(tab-port) {
+            margin: .6rem;
+        }
+    }
+}
+
+.js-shrink {
+    background-color: #fefeff;
+    padding: 2.5rem 6vw;
+    border-bottom: 2px solid $color-text-white;
+
+    @include respond(tab-port) {
+        padding: 1.2rem 6vw;
+    }
+
+    .header__link {
+        color: $color-dark !important;
+        font-weight: 400;
+        border: 0;
+        outline: none;
+        &:hover, &--active {
+            color: $color-secondary-dark !important;
+            border-bottom: 2px solid $color-secondary-dark;
+        }
+    }
+
+    .header__brand {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $color-secondary-dark !important;
+
+        @include respond(big-desktop) {
+            font-size: 2.4rem;
+        }
+    }
+}

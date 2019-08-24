@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?1n49kg');
+  src:  url('../fonts/icomoon.eot?1n49kg#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1n49kg') format('truetype'),
+    url('../fonts/icomoon.woff?1n49kg') format('woff'),
+    url('../fonts/icomoon.svg?1n49kg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail:before {
+  content: "\e913";
+}
+.icon-email:before {
+  content: "\e913";
+}
+.icon-letter:before {
+  content: "\e913";
+}
+.icon-envelope:before {
+  content: "\e913";
+}
+.icon-contact:before {
+  content: "\e913";
+}
+.icon-css3:before {
+  content: "\e900";
+  color: #1572b6;
+}
+.icon-git:before {
+  content: "\e902";
+  color: #f05032;
+}
+.icon-github:before {
+  content: "\e903";
+}
+.icon-html5:before {
+  content: "\e904";
+  color: #e34f26;
+}
+.icon-javascript:before {
+  content: "\e905";
+  color: #f7df1e;
+}
+.icon-jquery:before {
+  content: "\e906";
+  color: #0769ad;
+}
+.icon-laravel:before {
+  content: "\e901";
+  color: #e74430;
+}
+.icon-linkedin:before {
+  content: "\e912";
+  color: #0077b5;
+}
+.icon-linux:before {
+  content: "\e907";
+  color: #fcc624;
+}
+.icon-mongodb:before {
+  content: "\e908";
+  color: #47a248;
+}
+.icon-mysql:before {
+  content: "\e909";
+  color: #4479a1;
+}
+.icon-nodejs:before {
+  content: "\e90a";
+  color: #393;
+}
+.icon-npm:before {
+  content: "\e90d";
+  color: #cb3837;
+}
+.icon-php:before {
+  content: "\e90b";
+  color: #777bb4;
+}
+.icon-react:before {
+  content: "\e90c";
+  color: #61dafb;
+}
+.icon-ubuntu:before {
+  content: "\e90e";
+  color: #e95420;
+}
+.icon-webpack:before {
+  content: "\e90f";
+  color: #8dd6f9;
+}
+.icon-wordpress:before {
+  content: "\e911";
+  color: #21759b;
+}
+.icon-html52:before {
+  content: "\e910";
+  color: #e34f26;
+}
+.icon-keyboard:before {
+  content: "\e955";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-hammer:before {
+  content: "\e996";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+}

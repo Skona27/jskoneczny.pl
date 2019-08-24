@@ -1,0 +1,118 @@
+.section-skills {
+    background-color: #fefeff;
+    color: $color-dark;
+    padding-top: 21rem; 
+    
+    @include respond(big-desktop) {
+        padding-top: 22rem; 
+    }
+
+    .row-list__item {
+        font-size: 10rem;
+        transition: .15s all ease-in;
+        text-shadow: 1px 1px .6rem rgba(0,0,0, .1);
+
+        @include respond(phone) {
+            margin: -1rem 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.section-promo {
+    background: linear-gradient(to right, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85))
+    , url(../img/promo.jpg);
+    padding: 7rem 0 !important;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+.section-work {
+    background-color: #fefeff;
+    margin-bottom: -14rem;
+    padding-top: 21rem;
+
+    @include respond(big-desktop) {
+        padding-top: 22rem; 
+    }
+
+    @include respond(phone) {
+        padding-top: 20rem;
+    }
+
+    .horizontal-rule {
+        margin-bottom: -2rem !important;
+    }
+}
+
+.section-projects {
+    background: linear-gradient(to right, rgba($color-secondary-dark-2, .9), rgba($color-secondary-dark-2, .9)),
+    url(../img/wormz.png);
+    color: $color-text-white;
+    transform: skewY(-3.2deg);
+    padding-bottom: 10rem;
+    padding-top: 17rem;
+    
+    border-bottom: 1px solid $color-secondary-dark;
+
+    @include respond(phone) {
+        padding-top: 19.3rem;
+    }
+
+    & > * {
+        transform: skewY(3.2deg);
+    }
+
+    hr {
+        @include respond(phone) {
+            margin-bottom: 3rem;
+        }
+
+        margin-bottom: 4rem;
+
+        @include respond(big-desktop) {
+            margin-bottom: 5rem; 
+        }
+    }
+
+    .row {
+        padding: 2rem 2rem;
+        justify-content: space-between;
+
+        @include respond(big-desktop) {
+            padding: 4rem 2rem; 
+        }
+
+        @include respond(phone) {
+            padding: 0 2rem;
+        }
+    }
+
+    .col-1-of-2 {
+        flex-basis: 47%;
+      }
+
+    .col-1-of-3 {
+        flex-basis: 31% !important;
+        @include respond(tab-port) {
+            flex-basis: 99% !important;
+          }
+      }
+}
+
+.section-contact {
+    background: linear-gradient(to right, rgba($color-tertiary-dark, .88), rgba($color-tertiary-dark, .88)), url(../img/wormz.png);
+    color: $color-text-white;
+    margin-top: -8rem;
+    padding-top: 25rem;
+    text-align: center;
+
+    @include respond(phone) {
+        padding-top: 21rem;
+    }
+}

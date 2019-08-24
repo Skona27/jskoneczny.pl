@@ -1,0 +1,21 @@
+.horizontal-rule {
+    width: 25rem;
+    height: .3rem;
+    border: 0;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @include respond(phone) {
+        margin-top: 2.2rem;
+        margin-bottom: 2.2rem;
+    }
+
+    &--white {
+        background-color: $color-text-white;
+    }
+
+    &--primary {
+        background-color: lighten($color-dark, 5%);
+    }
+}

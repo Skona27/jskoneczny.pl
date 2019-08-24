@@ -1,0 +1,87 @@
+.footer {
+    background-color: $color-dark;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $color-text-white;
+    padding: 3.5rem 6vw;
+    padding-bottom: 6rem;
+
+    @include respond(phone-sm) {
+        text-align: center;
+    }
+    
+    @include respond(phone) {
+        flex-direction: column;
+        padding-bottom: 4rem;
+    }
+
+    &__techs {
+        @include respond(phone) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &__copy {
+        color: $color-text-white;
+        padding: .2rem;
+        font-size: 1.6rem;
+        text-align: right;
+
+        @include respond(big-desktop) {
+            font-size: 1.9rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 0rem !important;
+        }
+
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        margin-left: -.5rem;
+    }
+
+    &__list > * {
+        background-color: $color-secondary-light;
+        padding: .5rem .8rem;
+        color: $color-text-white;
+        border-radius: 3px;
+        margin: .4rem .5rem;
+        font-size: 1.5rem;
+    }
+    &__btn {
+        text-decoration: none;
+        color: $color-secondary-dark;
+        font-size: 1.5rem;
+        border: none;
+        text-transform: uppercase;
+        padding-bottom: .2rem;
+
+        @include respond(big-desktop) {
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__item {
+        margin: 0rem;
+        padding-top: 0; 
+        
+        &:last-of-type {
+            padding-right: 0 !important;
+        }
+    }
+
+    &__box {
+        transform: translateY(.8rem);
+    }
+}

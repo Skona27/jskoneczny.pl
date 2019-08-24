@@ -1,0 +1,30 @@
+.u-margin-top-small {
+    margin-top: 2rem;
+    @include respond(tab-land) {
+        margin-top: 1.5rem !important;
+    }
+    @include respond(phone) {
+        margin-top: 2rem !important;
+    }
+}
+
+.u-margin-top-medium {
+    margin-top: 4rem !important;
+    @include respond(tab-land) {
+        margin-top: 2.5rem !important;
+    }
+    @include respond(phone) {
+        margin-top: 2.5rem !important;
+    }
+}
+
+.u-margin-top-big {
+    margin-top: 8rem !important;
+
+    @include respond(tab-land) {
+        margin-top: 4rem !important;
+    }
+    @include respond(phone) {
+        margin-top: 2.8rem !important;
+    }
+}

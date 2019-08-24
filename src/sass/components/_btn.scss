@@ -1,0 +1,131 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: 1px 1px .6rem rgba(0,0,0, .1);
+    transition: .25s all ease-out;
+
+    @include respond(big-desktop) {
+        padding: 1.2rem 2.8rem;
+        font-size: 2.2rem;
+    }
+
+    &--primary {
+        border-color: $color-text-white;
+        color: $color-text-white;
+
+        &:hover {
+            background-color: $color-text-white;
+            color: $color-tertiary-light;
+        }
+    }
+
+    &--secondary {
+        border-color: $color-tertiary-light;
+        color: $color-tertiary-light;
+
+        &:hover {
+            background-color: $color-tertiary-light;
+            color: $color-text-white;
+        }
+    }
+
+    &--tertiary {
+        border-color: $color-secondary-light;
+        color: $color-secondary-light;
+
+        &:hover {
+            background-color: $color-secondary-light;
+            color: $color-text-white;
+        }
+    }
+
+    &--4 {
+        background-color: none;
+        color: $color-text-white;
+        border-color: $color-text-white;
+
+        &:hover {
+            background-color: $color-text-white;
+            border-color: $color-text-white;
+            color: $color-secondary-light;
+        }
+    }
+
+
+    &--medium {
+        padding: .6rem 1.6rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+        transition: .18s all ease-out;
+
+        @include respond(big-desktop) {
+            padding: .7rem 2rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    &--small {
+        padding: .3rem .7rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        transition: .15s all ease-out;
+
+        @include respond(big-desktop) {
+            padding: .4rem 1rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &--text {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 3rem;
+        border-radius: 0;
+        color: $color-text-white;
+        transition: .13s all ease-out;
+        box-shadow: none;
+
+        &:hover {
+            color: $color-secondary-light;
+        }
+    }
+
+    &--text-sm {
+        color: $color-tertiary-dark;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-size: 2rem;
+        border-radius: 0;
+        font-weight: 400;
+        box-shadow: none;
+
+        @include respond(big-desktop) {
+            font-size: 2.4rem;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &--disabled {
+        border: 3px solid $color-dark;
+            background-color: #fefeff;
+            color: $color-dark;
+        &:hover {
+            cursor: not-allowed;
+            border: 3px solid $color-dark;
+            background-color: #fefeff;
+            color: $color-dark;
+        }
+    }
+}

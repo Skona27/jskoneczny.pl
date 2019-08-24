@@ -1,0 +1,125 @@
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 400;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-1 {
+    color: $color-text-white;
+    margin-bottom: 2rem;
+
+    &--main {
+        text-transform: uppercase;
+        font-size: 5rem;
+        display: block;
+        font-weight: 700;
+        letter-spacing: 7px;
+        text-shadow: 0 .3rem 1rem rgba(0,0,0, .2);
+
+        @include respond(big-desktop) {
+            font-size: 6.4rem;
+        }
+
+        @include respond(tab-land) {
+            font-size: 4.4rem;
+            letter-spacing: 5px;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3.8rem;
+            letter-spacing: 3px;
+        }
+    }
+
+    &--sub {
+        text-transform: capitalize;
+        font-size: 3rem;
+        display: block;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-shadow: 0 .2rem .2rem rgba(0,0,0, .2);
+
+        @include respond(big-desktop) {
+            font-size: 3.7rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 2.4rem;
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.heading-2 {
+    color: $color-dark;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    text-shadow: 0 .2rem .6rem rgba(0,0,0, .16);
+
+
+    @include respond(big-desktop) {
+        font-size: 3.8rem;
+    }
+
+    &--white {
+        color: $color-text-white;
+    }
+}
+
+.heading-4 {
+    color: $color-text-white;
+    margin-bottom: .4rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 0 .1rem .3rem rgba(0,0,0, .2);
+
+    @include respond(big-desktop) {
+        font-size: 1.6rem;
+    }
+}
+
+.text {
+    max-width: 95rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+
+
+    @include respond(big-desktop) {
+        font-size: 2rem;
+    }
+
+    &--2 {
+        max-width: 115rem;
+        font-size: 1.8rem;
+
+
+        @include respond(big-desktop) {
+            font-size: 2.1rem;
+        }
+    }
+}
+
+.promo {
+    max-width: 105rem;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+
+    @include respond(big-desktop) {
+        font-size: 2.4rem;
+    }
+}
+
+.bold {
+    //color: $color-secondary-dark;
+    font-weight: 500;
+}
