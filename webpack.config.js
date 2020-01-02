@@ -9,7 +9,7 @@ const ImageminPlugin = require("imagemin-webpack-plugin").default;
 module.exports = {
   entry: ["babel-polyfill", "./src/js/index.js", "./src/sass/index.scss"],
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
     filename: "assets/bundle.js"
   },
   module: {
@@ -102,6 +102,6 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: "./dist"
+    contentBase: "./public"
   }
 };
