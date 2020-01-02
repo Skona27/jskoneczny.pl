@@ -2,10 +2,7 @@ const CACHE_NAME = "jskoneczny.pl";
 
 // List of files which are store in cache.
 let filesToCache = [
-  "/assets/fonts/icomoon.eot",
   "/assets/fonts/icomoon.svg",
-  "/assets/fonts/icomoon.ttf",
-  "/assets/fonts/icomoon.woff",
   "/assets/img/wormz.png",
   "/assets/img/projekty/color-game.png",
   "/assets/img/projekty/restapi.jpg",
@@ -16,7 +13,6 @@ let filesToCache = [
   "/assets/img/projekty/twitter-client.png",
   "/assets/img/projekty/forkify.png",
   "/assets/img/projekty/natours.jpg",
-  "/assets/img/1large.jpg",
   "/assets/img/portfolio/iksel.jpg",
   "/assets/img/portfolio/justart.png",
   "/assets/img/portfolio/magia-kodu.jpg",
